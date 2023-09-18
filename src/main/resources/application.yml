@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    # more profiles attached to PROD/TEST environments could be configured
+    default: 'local'
+  output:
+    ansi:
+      enabled: ALWAYS
+
+logging:
+  level:
+    root: WARN
+    io.filkovsp.carpark: INFO
+  pattern:
+    dateformat: 'yyyy-MM-dd hh:mm:ss.SSS'
+
+car-park:
+  storeys:
+    - level: 'G'
+      capacity: 100
+      # possible values: 'all', 'none' or a string of comma separated integers
+      ev-enabled: '6,7,8,9,10'
+  # parking cost per space rounded up to the nearest int
+  parking-cost: 2.0
+  # two-wheelbase discount per each hour
+  two-wheelbase-discount: 0.5
+  # additional charging cost for EVs if charging service selected
+  charging-cost: 0.3
