@@ -49,4 +49,4 @@ Additional services could be added:
 - Reservation Service (parking on demand)
 - Car Washing Service - while car is being washed, it's in a parking queue. If driver decides to leave parking within 5 minutes after their has been washed, they won't be charged for parking.  
 
-<img src="concept.png"/>
+![concept](./concept.png)
